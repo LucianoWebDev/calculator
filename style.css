@@ -1,0 +1,107 @@
+body {
+    margin: 0px;
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*! Flexbox Stuff */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: blue;
+    box-shadow: 15px 15px 0px black;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    height: 70vh;
+    width: 40vw;
+}
+
+.rowFlex {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.sqr {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.inputField {
+    flex: 1;
+    width: 100%;
+    font-size: 4rem;
+    text-align: right;
+    caret-color: yellow;
+    font-family: 'Space Mono', monospace;
+}
+
+.empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*! Some Legit Style Things */
+.sqr {
+    background-color: inherit;
+    border: none;
+}
+.result {
+    background-color: green;
+}
+
+.theThird,
+.top {
+    border-right: 1px solid black;
+}
+
+.rowFive,
+.theLast {
+    background-color: orange;
+    border-bottom: 1px solid black;
+}
+
+.clicked {
+    background-color: rosybrown;
+    color: brown;
+}
+
+a {
+    color: black;
+    font-size: 1rem;
+    padding: 0px 15px;
+}
+
+p {
+    color: dodgerblue;
+    font-size: 0.6rem;
+}
+
+.numbers {
+    text-shadow: 2px 2px 0px white, 4px 4px 0px red;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ch-DE">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/ce7dc07540.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700,700i&display=swap&subset=latin-ext"
+            rel="stylesheet"
+        />
+        <title>Calc the shizzle</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="calc">
+                <!--! Input Field -->
+                <div class="leiste rowFlex">
+                    <input
+                        type="text"
+                        maxlength="15"
+                        name="input"
+                        id="input"
+                        class="inputField"
+                        placeholder="ACAB"
+                    />
+                </div>
+
+                <!--! Top Row C / X  BSP-->
+                <div class="rowFive rowFlex">
+                    <button class="sqr top clear">c</button>
+                    <button value="/" class="sqr top divided">÷</button>
+                    <button value="*" class="sqr top multiply">*</button>
+                    <button value="" class="sqr backspace">⌫</button>
+                </div>
+
+                <!--! Fourth Row 7 8 9 - -->
+                <div class="rowFour rowFlex">
+                    <button value="7" class="sqr seven numbers">
+                        7
+                    </button>
+                    <button value="8" class="sqr eight numbers">8</button>
+                    <button value="9" class="sqr theThird nine numbers">
+                        9
+                    </button>
+                    <button value="-" class="sqr theLast minus">-</button>
+                </div>
+
+                <!--! Third Row 4 5 6 + -->
+                <div class="rowThree rowFlex">
+                    <button value="4" class="sqr four numbers">4</button>
+                    <button value="5" class="sqr five numbers">5</button>
+                    <button value="6" class="sqr theThird six numbers">
+                        6
+                    </button>
+                    <button value="+" class="sqr theLast plus">+</button>
+                </div>
+
+                <!--! Second Row 1 2 3 % -->
+                <div class="rowTwo rowFlex">
+                    <button value="1" class="sqr one numbers">1</button>
+                    <button value="2" class="sqr two numbers">2</button>
+                    <button value="3" class="sqr theThird three numbers">
+                        3
+                    </button>
+                    <button value="%" class="sqr theLast percent">%</button>
+                </div>
+
+                <!--! First Row ''  0 . =  -->
+                <div class="rowOne rowFlex">
+                    <button value="" class="sqr empty">
+                        <div class="links">
+                            <a
+                                href="https://www.instagram.com/lucianodevjourney"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
+                            <a
+                                href="https://github.com/LucianoWebDev"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                ><i class="fab fa-github"></i
+                            ></a>
+                        </div>
+                        <div>
+                            <p>Luciano M. 2020</p>
+                        </div>
+                    </button>
+                    <button value="0" class="sqr zero numbers">0</button>
+                    <button value="." class="sqr theThird dot numbers">
+                        .
+                    </button>
+                    <button class="sqr result">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="master.js"></script>
+    </body>
+</html>
