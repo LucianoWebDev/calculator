@@ -5,7 +5,7 @@ body {
     width: 100vw;
 }
 
-/*! Flexbox Stuff */
+/*! Flexbox Shizzle */
 .container {
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body {
     border-bottom: 1px solid white;
     border-right: 1px solid white;
     height: 70vh;
-    width: 40vw;
+    width: 30vw;
 }
 
 .rowFlex {
@@ -48,6 +48,12 @@ body {
     text-align: right;
     caret-color: yellow;
     font-family: 'Space Mono', monospace;
+    background-color: gray;
+    color: white;
+}
+
+::placeholder {
+    color: black;
 }
 
 .empty {
@@ -67,6 +73,7 @@ body {
 }
 
 /*! Some Legit Style Things */
+
 .sqr {
     background-color: inherit;
     border: none;
@@ -86,15 +93,10 @@ body {
     border-bottom: 1px solid black;
 }
 
-.clicked {
-    background-color: rosybrown;
-    color: brown;
-}
-
 a {
     color: black;
     font-size: 1rem;
-    padding: 0px 15px;
+    padding: 0px 12px;
 }
 
 p {
@@ -102,6 +104,46 @@ p {
     font-size: 0.6rem;
 }
 
+button {
+    outline: none;
+}
+
+button:hover {
+    text-shadow: none;
+    background-color: violet;
+    transition: all 0.2s ease-in-out;
+}
+
+.result:hover {
+    background-color: red;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.signs:hover {
+    background-color: yellow;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.empty:hover {
+    background-color: darkorange;
+    transition: background-color 0.2s ease-in-out;
+}
+
 .numbers {
     text-shadow: 2px 2px 0px white, 4px 4px 0px red;
+}
+
+/*! Media Querys */
+@media (max-width: 1025px) {
+    .calc {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1026px) and (max-width: 2000px) {
+    .calc {
+        width: 70vw;
+        height: 85vh;
+    }
 }

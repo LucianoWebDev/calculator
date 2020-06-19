@@ -4,6 +4,11 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="shortcut icon"
+            href="./img/favicon.ico"
+            type="image/x-icon"
+        />
         <script
             src="https://kit.fontawesome.com/ce7dc07540.js"
             crossorigin="anonymous"
@@ -20,21 +25,22 @@
                 <!--! Input Field -->
                 <div class="leiste rowFlex">
                     <input
+                        disabled="true"
                         type="text"
                         maxlength="15"
                         name="input"
                         id="input"
                         class="inputField"
-                        placeholder="ACAB"
+                        placeholder="e=mc^2"
                     />
                 </div>
 
                 <!--! Top Row C / X  BSP-->
                 <div class="rowFive rowFlex">
-                    <button class="sqr top clear">c</button>
-                    <button value="/" class="sqr top divided">÷</button>
-                    <button value="*" class="sqr top multiply">*</button>
-                    <button value="" class="sqr backspace">⌫</button>
+                    <button class="sqr top clear signs">c</button>
+                    <button value="/" class="sqr top divided signs">÷</button>
+                    <button value="*" class="sqr top multiply signs">*</button>
+                    <button value="" class="sqr backspace signs">⌫</button>
                 </div>
 
                 <!--! Fourth Row 7 8 9 - -->
@@ -46,7 +52,7 @@
                     <button value="9" class="sqr theThird nine numbers">
                         9
                     </button>
-                    <button value="-" class="sqr theLast minus">-</button>
+                    <button value="-" class="sqr theLast minus signs">-</button>
                 </div>
 
                 <!--! Third Row 4 5 6 + -->
@@ -56,7 +62,7 @@
                     <button value="6" class="sqr theThird six numbers">
                         6
                     </button>
-                    <button value="+" class="sqr theLast plus">+</button>
+                    <button value="+" class="sqr theLast plus signs">+</button>
                 </div>
 
                 <!--! Second Row 1 2 3 % -->
@@ -66,7 +72,9 @@
                     <button value="3" class="sqr theThird three numbers">
                         3
                     </button>
-                    <button value="%" class="sqr theLast percent">%</button>
+                    <button value="%" class="sqr theLast percent signs">
+                        %
+                    </button>
                 </div>
 
                 <!--! First Row ''  0 . =  -->
